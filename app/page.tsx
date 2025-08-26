@@ -77,22 +77,26 @@ export default function SelfIntroduction() {
     name: "John Lester Escarlan",
     section: "CMSC 192-C",
     courseAndYear: "BS Computer Science - III",
-    location: "Quezon City, Philippines",
-    siblings: "Youngest with one sibling",
+    location: "Lahug, Cebu City, Philippines",
+    siblings: "Youngest of the two siblings",
     highSchool: "North Fairview Highschool",
     motto: "Code with purpose, learn with passion",
     email: "jnescarlan@up.edu.ph",
   };
 
   const academicDetails = [
-    { icon: MapPin, label: "From", value: personalInfo.location },
-    { icon: Users, label: "Siblings", value: personalInfo.siblings },
+    {
+      icon: MapPin,
+      label: "Currently living in",
+      value: personalInfo.location,
+    },
+    { icon: Users, label: "I am the", value: personalInfo.siblings },
     {
       icon: GraduationCap,
-      label: "High School",
+      label: "I graduated from",
       value: personalInfo.highSchool,
     },
-    { icon: Quote, label: "Motto", value: `"${personalInfo.motto}"` },
+    { icon: Quote, label: "My motto is", value: `"${personalInfo.motto}"` },
   ];
 
   return (
